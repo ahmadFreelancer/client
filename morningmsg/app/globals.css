@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  background-size: 400% 400%;
+  font-family: 'Permanent Marker', cursive !important;
+  animation: gradient 6s ease infinite;
+  color: white;
+}
+
+.messageDivWrapper {
+  background: rgba(41, 60, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 75vw;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
+
+.btn{
+  font-family: 'Permanent Marker', cursive !important;
+  color: white !important;
+  font-size: 25px !important;
+  background: rgba(41, 60, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out !important;
+}
+.btn:hover{
+  filter: brightness(3);
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  text-align: center;
+  font-family: 'Lucida Sans';
+  z-index: 5;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.img1 {
+  position: fixed;
+  right: 0;
+  top: 21%;
+}
+
+.img2 {
+  position: fixed;
+  left: 0;
+  top: 21%;
+}
